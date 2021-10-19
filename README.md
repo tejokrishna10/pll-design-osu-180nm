@@ -9,7 +9,11 @@ This repository presents design of on-chip clock multiplier(8X PLL) using open s
 2.[THEORY](#-THEORY)<br />
 3.[SPECIFICATION](#-SPECIFICATION)<br />
 4.[TOOLS](#-TOOLS)<br />
-5.[PRE-LAYOUT DESIGN AND SIMULATION](#-PRE--LAYOUT-DESIGN-AND-SIMULATION)
+5.[PRE-LAYOUT DESIGN AND SIMULATION](#-PRE--LAYOUT-DESIGN-AND-SIMULATION)<br />
+6.[POST-LAYOUT DESIGN AND SIMULATION](#-POST--LAYOUT-DESIGN-AND-SIMULATION)<br />
+7.[SCOPE](#-SCOPE)<br />
+8.[ABOUT AUTHOR](#-ABOUT-AUTHOR)<br />
+9.[ACKNOWLEDGEMENT](#-ACKNOWLEDGEMENT)
 
 
 1.**INTRODUCTION TO ON-CHIP CLOCK MULTIPLIER:**
@@ -92,4 +96,110 @@ Simulation results:
 
 
 ![image](https://user-images.githubusercontent.com/39303205/137902737-f8990401-98f3-4973-aed6-a3ef235c9827.png)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6.**POST-LAYOUT DESIGN AND SIMULATION:**
+
+1.**Phase Frequency Detector**
+
+
+![image](https://user-images.githubusercontent.com/39303205/137926589-c6f8a0a1-94dc-4306-933b-1cabae392fa2.png)<br />
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137926643-173615aa-d783-446c-a4f9-9e9e0f628fae.png)<br />
+
+
+
+
+2.**2-1 MUX**
+
+
+![image](https://user-images.githubusercontent.com/39303205/137926841-909b7e0d-fdc7-4da1-8942-a67687d84eaf.png)<br />
+
+
+
+
+
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137926958-3bec1952-f86c-4f6f-a117-64e082872032.png)<br />
+
+
+
+
+
+
+
+
+3.**FREQUENCY DIVIDE BY 8**
+
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137927233-0c15d577-404b-4bf6-9389-0b0c544c247c.png)<br />
+
+
+
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137927331-0a6542c2-51c0-478a-9ddc-cdef8bf2b3a6.png)<br />
+
+
+
+
+
+
+
+
+4.**PLL**
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137927575-7ddd9719-f171-48fe-bdad-870013230a29.png)<br />
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+7.**SCOPE:**
+
+1.Porting this IP on lower technology nodes using advance PDK's where capacitor fabrication is realizable<br />
+Area Efficient Design Improvements.<br />
+Improvements for Power Reduction.<br />
+Improvements of accuracy, jitter & dead zone.<br />
+
+
+
+
+
+
+
+
+
+
+
 
