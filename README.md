@@ -4,7 +4,7 @@ This repository presents design of on-chip clock multiplier(8X PLL) using open s
 **Table of Contents:**
 
 1.[INTRODUCTION TO ON-CHIP CLOCK MULTIPLIER](#-INTRODUCTION-TO-ON--CHIP-CLOCK-MULTIPLIER)<br />
-2.[THEORY](#-THEORY)
+2.[THEORY](#-THEORY)<br />
 3.[SPECIFICATION](#-SPECIFICATION)
 
 1.**INTRODUCTION TO ON-CHIP CLOCK MULTIPLIER:**
