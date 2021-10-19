@@ -7,7 +7,8 @@ This repository presents design of on-chip clock multiplier(8X PLL) using open s
 
 1.[INTRODUCTION TO ON-CHIP CLOCK MULTIPLIER](#-INTRODUCTION-TO-ON--CHIP-CLOCK-MULTIPLIER)<br />
 2.[THEORY](#-THEORY)<br />
-3.[SPECIFICATION](#-SPECIFICATION)
+3.[SPECIFICATION](#-SPECIFICATION)<br />
+4.[TOOLS USED](#-TOOLS USED)
 
 
 1.**INTRODUCTION TO ON-CHIP CLOCK MULTIPLIER:**
@@ -45,3 +46,10 @@ Modern microprocessors have 2GHz-5GHz clock frequencies whereas quartz oscillato
 | IDDD      | Digital Supply Current            |      |             |       | uA   | VVCO=0.8V, VCO mode                                                                  |
 | IDDD      | Digital Supply Current            |      |             |       | uA   | FCLKREF=10MHz, PLL mode                                                              |
 | IDDD      | Digital Supply Current            |      |             |       | uA   | EN_VCO=0, EN_CP=0, FCLKREF=0                                                         |
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4.**TOOLS USED:**
+The design has been developed using open souce CAD tools .They are:
+  1.[NGSPICE](http://ngspice.sourceforge.net/download.html)<br />
+  2.[MAGIC](http://opencircuitdesign.com/magic/)
