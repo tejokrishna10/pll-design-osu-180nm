@@ -171,8 +171,6 @@ Simulation results:
 
 
 
-
-
 ![image](https://user-images.githubusercontent.com/39303205/137927575-7ddd9719-f171-48fe-bdad-870013230a29.png)<br />
 
 
@@ -188,9 +186,9 @@ Simulation results:
 7.**SCOPE:**
 
 1.Porting this IP on lower technology nodes using advance PDK's where capacitor fabrication is realizable<br />
-Area Efficient Design Improvements.<br />
-Improvements for Power Reduction.<br />
-Improvements of accuracy, jitter & dead zone.<br />
+2.Area Efficient Design Improvements.<br />
+3.Improvements for Power Reduction.<br />
+4.Improvements of accuracy, jitter & dead zone.<br />
 
 
 
