@@ -12,11 +12,19 @@ This repository presents design of on-chip clock multiplier(8X PLL) using open s
 5.[PRE-LAYOUT DESIGN AND SIMULATION](#-PRE--LAYOUT-DESIGN-AND-SIMULATION)<br />
 6.[POST-LAYOUT DESIGN AND SIMULATION](#-POST--LAYOUT-DESIGN-AND-SIMULATION)<br />
 7.[SCOPE](#-SCOPE)<br />
-8.[ABOUT AUTHOR](#-ABOUT-AUTHOR)<br />
-9.[ACKNOWLEDGEMENT](#-ACKNOWLEDGEMENT)
+8.[CONCLUSION](#-CONCLUSION)<br />
+9.[REFERENCES](#-REFERENCES)
 
 
 1.**INTRODUCTION TO ON-CHIP CLOCK MULTIPLIER:**
+
+**What I have Learnt in the Workshop**
+1.What , Why and How a PLL is used to achieve frequency multiplication ?<br />
+2.How to obtain a netlist from circuit and do a pre-layout simulation?<br />
+3.How to perfrom layout and extract parasitic information and obtain postlayout netlist and again perform simulation?<br />
+4.The most important know how i learned through this workshop is learning how to obtain a larger block (here PLL) by connecting the smaller blocks (here Phase- detector,chargepump,low-pass filter,VCO,frequency-divider)
+
+
 
 The repository contains simulation files and other relevant files for on-chip clock multiplier using PLL(Fclock-in:5MHZ-12MHz ;Fclock-out:40MHz-100MHz at 1.8V)IP.
 The goal is to design on-chip clock multiplier using OSU-180nm technology node.The on-chip clock multiplier is present in almost all synchronous processors.
@@ -73,6 +81,35 @@ The design has been developed using open souce CAD tools .They are:
 5.Run
 
 ![image](https://user-images.githubusercontent.com/39303205/137882881-f77aac7b-b080-4409-bc72-ea3dcc1610ad.png)
+
+
+Phase-detector : Based on the feedback from the frequency divider it creates two signals ,up and down which are given to the charge-pump<br />
+Charge pump : Charge-pump consists of power MOSFETS it helps in better charging of the capacitors present in the next stage which is a LPF<br />
+LPF : LPF is used for smoothning the waveform and get a dc value<br />
+MUX : Here MUX is used to select between VCO only mode or PLL<br />
+VCO : VCO is used to get the output frequency based on the input DC value<br />
+Frequency divider :Here a basic D-Filp-flop based counter is used to get frequency division
+
+**Operation of feedback-loop
+control**
+
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137938353-6c471bab-a2b0-465d-89a5-f5a2d62cca57.png)
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137938240-ee6d070c-6f8b-4922-b057-28f600afe425.png)
+
+
+
+
+As shown above we consider a second-order feed back systesm , the response can be as shown below based on location of poles
+
+
+
+For PLL we should obtain a critically damped response as it has less oscillations and its fast.
 
 Simulation results:
 
@@ -190,6 +227,22 @@ Simulation results:
 3.Improvements for Power Reduction.<br />
 4.Improvements of accuracy, jitter & dead zone.<br />
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+8.**CONCLUSION:**
+
+I have learnt the flow of designing a PLL and how to design a system from lower block to higher blocks.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9.**REFERENCES:**
+
+1.https://github.com/parasgidd/avsdpll_3v3<br />
+2.VLSI system design pvt ltd tutorial sessions
 
 
 
