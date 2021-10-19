@@ -71,7 +71,7 @@ The design has been developed using open souce CAD tools .They are:
 ![image](https://user-images.githubusercontent.com/39303205/137882881-f77aac7b-b080-4409-bc72-ea3dcc1610ad.png)
 
 Simulation results:
-![image](https://user-images.githubusercontent.com/39303205/137902672-c56d83a1-5bde-47fc-82d1-e5ca8c72458f.png)
+![image](https://user-images.githubusercontent.com/39303205/137902672-c56d83a1-5bde-47fc-82d1-e5ca8c72458f.png)<br />
 
 ![image](https://user-images.githubusercontent.com/39303205/137902737-f8990401-98f3-4973-aed6-a3ef235c9827.png)
 
