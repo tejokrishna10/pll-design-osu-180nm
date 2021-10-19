@@ -5,6 +5,7 @@ This repository presents design of on-chip clock multiplier(8X PLL) using open s
 
 1.[INTRODUCTION TO ON-CHIP CLOCK MULTIPLIER](#-INTRODUCTION-TO-ON--CHIP-CLOCK-MULTIPLIER)<br />
 2.[THEORY](#-THEORY)
+3.[SPECIFICATION](#-SPECIFICATION)
 
 1.**INTRODUCTION TO ON-CHIP CLOCK MULTIPLIER:**
 
@@ -17,4 +18,23 @@ A phase-locked loop (PLL) uses a reference frequency(Fclock-in) to generate a mu
 
 Moderm microprocessors have 2GHz-5GHz clock frequencies whereas quartz oscillator can produce only few MHz ,so to achieve high frequency clock signal from low-frequency clock source we are designing PLL IP block and simulating it in this repository.
 
+3.**SPECIFICATION:**
 
+| Parameter | Description                       | Min  | Type        | Max   | Unit | Condition                                                                            |
+|-----------|-----------------------------------|------|-------------|-------|------|--------------------------------------------------------------------------------------|
+| VDD       | Digital supply voltage            |      | 1.8         |       | V    | T=-40 to 150C                                                                        |
+| FCLKREF   | Reference clock frequency         | 5    | 10          | 12.5  | MHz  |                                                                                      |
+| FCLKOUT   | Output clock frequency            | 39.7 | 80.91       | 99.81 | MHz  | PLL mode, T=27C, VDD=1.8                                                             |
+| FCLKOUT   | Output clock frequency            |      |             |       | MHz  | VCO mode, T=27C, VDD=1.8                                                             |
+| DC        | Duty Cycle                        | 48   |             | 52    | %    | T=-40 to 150C                                                                        |
+| IBCP      | Bias current for VCO              |      |             |       | uA   |                                                                                      |
+| VVCO      | Oscillatror control input voltage | .557 |             | 0.62  | V    | Vin_vco = 0V at t = 0 (.uic)                                                         |
+| JRMS      | Jitter (rms)                      |      | future work |       | ps   | PLL mode, FCLKREF = 10MHz                                                            |
+| TSET      | Settling Time                     | 5.2  | 5           | 4.6   | us   | start from EN_CP and report 2 values; one at FCLKOUT=40MHz and one at FCLKOUT=100MHz |
+| CL        | Load Capacitance                  |      |             |       | pF   |                                                                                      |
+| IDDA      | Analog Supply current             |      |             |       | ua   | VVCO=0.8V, VCO mode                                                                  |
+| IDDA      | Analog Supply current             |      |             |       | ua   | FCLKREF=10MHz, PLL mode                                                              |
+| IDDA      | Analog Supply current             |      |             |       | pa   | EN_VCO=0, EN_CP=0, FCLKREF=0                                                         |
+| IDDD      | Digital Supply Current            |      |             |       | uA   | VVCO=0.8V, VCO mode                                                                  |
+| IDDD      | Digital Supply Current            |      |             |       | uA   | FCLKREF=10MHz, PLL mode                                                              |
+| IDDD      | Digital Supply Current            |      |             |       | uA   | EN_VCO=0, EN_CP=0, FCLKREF=0                                                         |
