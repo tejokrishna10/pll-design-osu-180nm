@@ -111,6 +111,51 @@ As shown above we consider a second-order feed back systesm , the response can b
 
 For PLL we should obtain a critically damped response as it has less oscillations and its fast.
 
+NETLIST FROM ESIM
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137939973-b7fae254-1698-4ee8-8e67-29734f617146.png)
+
+
+NETLIST FOR NGSPICE
+
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137940041-fa6ebfd8-5a70-4f80-85b4-39bf7c002e69.png)
+
+
+
+RUNNING NGSPICE IN TERMINAL
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137940479-1f873fc9-ad04-4187-ab59-8d026d22a14f.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137940603-e1c83013-cb83-483a-9695-b705b64c250c.png)
+
+
+PHASE DETECTOR
+
+
+
+RUNNING IN NGSPICE
+
+
+![image](https://user-images.githubusercontent.com/39303205/137941185-9d13b04b-d0b6-476d-90ee-d03433125ee6.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137941310-6efdd7e6-87eb-4495-804a-f26a57918628.png)
+
+
+
+
 Simulation results:
 
 
@@ -138,6 +183,12 @@ Simulation results:
 
 6.**POST-LAYOUT DESIGN AND SIMULATION:**
 
+BASIC STEPS:
+
+
+![image](https://user-images.githubusercontent.com/39303205/137941450-c3e5adf5-3c7a-4d94-b007-8a06a9370e93.png)
+
+
 1.**Phase Frequency Detector**
 
 
@@ -153,6 +204,15 @@ Simulation results:
 
 
 2.**2-1 MUX**
+
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137942010-629608c2-27b7-420d-90b1-19fa746e319c.png)
+
+
+
+
 
 
 ![image](https://user-images.githubusercontent.com/39303205/137926841-909b7e0d-fdc7-4da1-8942-a67687d84eaf.png)<br />
@@ -204,6 +264,17 @@ Simulation results:
 
 
 4.**PLL**
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137942353-c508a128-86fd-4536-b4db-d5ab886ad867.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/39303205/137942567-a63a5051-b8e3-4443-a21d-893d4ee12f0c.png)
+
+
 
 
 
