@@ -8,7 +8,8 @@ This repository presents design of on-chip clock multiplier(8X PLL) using open s
 1.[INTRODUCTION TO ON-CHIP CLOCK MULTIPLIER](#-INTRODUCTION-TO-ON--CHIP-CLOCK-MULTIPLIER)<br />
 2.[THEORY](#-THEORY)<br />
 3.[SPECIFICATION](#-SPECIFICATION)<br />
-4.[TOOLS](#-TOOLS)
+4.[TOOLS](#-TOOLS)<br />
+5.[PRE-LAYOUT DESIGN AND SIMULATION](#-PRE--LAYOUT-DESIGN-AND-SIMULATION)
 
 
 1.**INTRODUCTION TO ON-CHIP CLOCK MULTIPLIER:**
@@ -56,3 +57,15 @@ The design has been developed using open souce CAD tools .They are:
   
   1.[NGSPICE](http://ngspice.sourceforge.net/download.html)<br />
   2.[MAGIC](http://opencircuitdesign.com/magic/)
+  
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+5.**PRE-LAYOUT DESIGN AND SIMULATION:**
+
+1.Installl tools<br />
+2.Circuit design<br />
+3.Netlist extraction<br />
+4.Netlist modification for NGSPICE<br />
+5.Run
+
+![image](https://user-images.githubusercontent.com/39303205/137882881-f77aac7b-b080-4409-bc72-ea3dcc1610ad.png)
