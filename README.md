@@ -18,15 +18,6 @@ This repository presents design of on-chip clock multiplier(8X PLL) using open s
 
 1.**INTRODUCTION TO ON-CHIP CLOCK MULTIPLIER:**
 
-**What I have Learnt in the Workshop**
-
-
-1.What , Why and How a PLL is used to achieve frequency multiplication ?<br />
-2.How to obtain a netlist from circuit and do a pre-layout simulation using NGSPICE?<br />
-3.How to perfrom layout and extract parasitic information and obtain postlayout netlist and again perform simulation?<br />
-
-
-
 
 The repository contains simulation files and other relevant files for on-chip clock multiplier using PLL(Fclock-in:5MHZ-12MHz ;Fclock-out:40MHz-100MHz at 1.8V)IP.
 The goal is to design on-chip clock multiplier using OSU-180nm technology node.The on-chip clock multiplier is present in almost all synchronous processors.
@@ -185,10 +176,6 @@ Simulation results:
 
 6.**POST-LAYOUT DESIGN AND SIMULATION:**
 
-BASIC STEPS:
-
-
-![image](https://user-images.githubusercontent.com/39303205/137941450-c3e5adf5-3c7a-4d94-b007-8a06a9370e93.png)
 
 
 1.**Phase Frequency Detector**
