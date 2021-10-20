@@ -20,9 +20,9 @@ This repository presents design of on-chip clock multiplier(8X PLL) using open s
 
 **What I have Learnt in the Workshop**
 1.What , Why and How a PLL is used to achieve frequency multiplication ?<br />
-2.How to obtain a netlist from circuit and do a pre-layout simulation?<br />
+2.How to obtain a netlist from circuit and do a pre-layout simulation using NGSPICE?<br />
 3.How to perfrom layout and extract parasitic information and obtain postlayout netlist and again perform simulation?<br />
-4.The most important know how i learned through this workshop is learning how to obtain a larger block (here PLL) by connecting the smaller blocks (here Phase- detector,chargepump,low-pass filter,VCO,frequency-divider)
+
 
 
 
